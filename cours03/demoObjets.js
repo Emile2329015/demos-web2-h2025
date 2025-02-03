@@ -127,12 +127,15 @@ personne4.afficherDetails();
 personne5.afficherDetails();
 
 // EXERCICE : 
+console.log("-----------Exercices-----------------");
 // a) Mettre les 5 objets (personne1 à personne5) dans un tableau appelé 'personnes'
-
+const personnes = [personne1,personne2,personne3,personne4,personne5];
+console.log(personnes);
 
 // b) Calculer l'âge moyen (avec .reduce())
-
-
+let sommeAgesTableau = personnes.reduce((sommeAges,element) => sommeAges + element.age, 0 );
+console.log(sommeAgesTableau)
+console.log("La moyenne des ages du tableau ");
 
 // Tous les objets qu'on a créés sont des instances de la classe Object
 console.log(personne1 instanceof Object, personne2 instanceof Object, personne3 instanceof Object, personne4 instanceof Object, personne5 instanceof Object); // true
