@@ -27,7 +27,7 @@ personne1.afficherDetails();
 const personne = [personne1, personne2, personne3, personne4, personne5, personne6];
 
 // b) Boucle for... of sur le tableau pour appeler .afficherDetails() de chacun des objets
-for(const personne of personnnes){
+for(const personne of personnes){
     personne.afficherDetails();
 }
 
