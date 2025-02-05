@@ -37,7 +37,7 @@ class Chien extends Animal {
         this.race = race;
     }
     
-    faireDuBruit() {
+    faireDuBruit() { // cette méthode a été REDÉFINIE (overridden)
         console.log("Wouf! Wouf!");
     }
     
