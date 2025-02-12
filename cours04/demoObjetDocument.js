@@ -17,7 +17,7 @@ propriétés et méthodes de l'objet document.
 
 console.log("\n1. Accès à l'objet document");
 // Affiche le contenu HTML de l'objet document
-
+console.log(document);
 console.log("\n2. Accès à des propriétés de l'objet document");
 // Affiche l'URL de la page
 // Affiche le titre de la page
@@ -25,7 +25,8 @@ console.log("\n2. Accès à des propriétés de l'objet document");
 // Affiche le contenu de l'en-tête de la page
 // Affiche le type de document
 // Affiche les éléments enfants de la page, dans ce cas, la balise html
-
+console.log(document.createElementurl);
+conu.loy()
 console.log("\n3. Accès à des méthodes de l'objet document");
 // Ouvre un nouvel onglet avec l'URL spécifié (dans la même fenêtre de navigateur)
 // Ouvre une nouvelle fenêtre et y crée un document
