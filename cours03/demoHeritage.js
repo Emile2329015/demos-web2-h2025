@@ -17,7 +17,11 @@ Notions importantes
 
 // Définition d'une classe parent
 class Animal {
+<<<<<<< HEAD
     constructor(nom="N/D") {
+=======
+    constructor(nom) {
+>>>>>>> 22255147e7fb31cb3dc34c247f74bd43d9ce641d
         this.nom = nom;
     }
     
@@ -54,4 +58,8 @@ console.log(monChien.race); // Labrador
 unAnimal.faireDuBruit(); // Un bruit d'animal
 monChien.faireDuBruit(); // Wouf! Wouf!
 console.log(monChien.decrire()); // Cet animal s'appelle Rex. C'est un chien de race Labrador.
+<<<<<<< HEAD
 console.log(unAnimal.decrire()); // Cet animal s'appelle Popcorn.
+=======
+console.log(unAnimal.decrire()); //  Cet animal s'appelle Popcorn.
+>>>>>>> 22255147e7fb31cb3dc34c247f74bd43d9ce641d
