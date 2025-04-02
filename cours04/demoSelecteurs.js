@@ -20,17 +20,12 @@ getElementById('unID') :
 console.log("\n1. Sélecteurs par ID : getElementById");
 
 // Sélectionne l'élément ayant l'ID 'pied'
-let pied = document.getElementById('pied');
 // Affiche l'élément sélectionné
-console.log(pied);
 // Affiche le type et le nom de noeud et le contenu HTML de l'élément sélectionné
-console.log(pied.nodeType,pied.nodeName, pied.innerHTML,pied.textContent);
+
 // Sélectionne l'élément ayant l'ID 'inexistant'
-let elmInexistant = document.getElementById('inexistant');
 // Affiche null
-if (elmInexistant == null)
-console.log("Il n'existe pas un eleemnt*inextnt")
-console.log=(elmInexistant);
+
 
 /****************************************************************
 getElementsByClassName('uneClasse') :
@@ -41,27 +36,22 @@ getElementsByClassName('uneClasse') :
 console.log("\n2. Sélecteurs par classe : getElementsByClassName");
 
 // Sélectionne les éléments ayant la classe 'nav-link'
-const elmsClasse1 = document.getElementsByClassName('nav-link');
 // Affiche la collection d'éléments sélectionnés
-console.log = (elmsClasse1);
 // Affiche le nombre d'éléments sélectionnés
-console.log = (elmsClasse1.length);
 // Affiche le premier élément sélectionné,
-console.log = (elmsClasse1.item(0)); // préférable à elmsClasse1[0] pour éviter les erreurs
+                                  // préférable à elmsClasse1[0] pour éviter les erreurs
 // Parcourir les éléments d'une HTMLCollection avec boucle for... of
-for(const elm of elmsClasse1){
-    console.log(elm.textContent);
-}
+
 // Autre méthode en convertissant la HTMLCollection en tableau avec Array.from()
-Array.elmsClasse1.forEach(elm => console.log(elm));
+
 // Sélectionne les éléments ayant la classe 'inexistant'
-const elmsClasse2 = document.getElementsByClassName('inexistant');
+
 
 // Sélectionne les éléments ayant les classes 'text-info' et 'text-uppercase'
 // l'ordre est sans importance, mais la casse est importante
-const elmsClasse3 = document.getElementsByClassName('text-info text-uppercase');
+
 // Affiche le premier élément sélectionné
-0
+
 
 /****************************************************************
 getElementsByTagName('uneBalise') :
