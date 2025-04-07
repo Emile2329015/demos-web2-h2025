@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const toggleDivGenre = (evt) => {
     //console.log(evt.target);
     const genre = evt.target.value;
@@ -54,4 +55,13 @@ const chargement = () => {
 };
 
 
+=======
+const chargement = () => {
+    //Intercepter l'envoi du formulaire
+    const form = document.getElementById("formulaire");
+    form.addEventListener('')
+
+};
+;
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
 document.addEventListener('DOMContentLoaded', chargement);

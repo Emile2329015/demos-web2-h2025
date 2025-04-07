@@ -26,8 +26,12 @@
 
 // Exemple d'écouteur d'événement : lorsque la propriété readyState
 // de l'objet document change, le code suivant est exécuté
+<<<<<<< HEAD
 const fonctionReadyStateLog = (evt) => {
     console.log(evt.target);
+=======
+document.addEventListener("readystatechange", () => {
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
     console.log("État du document :", document.readyState);
     if (document.readyState === "interactive") {
         console.log("Le DOM est prêt !");
@@ -35,14 +39,19 @@ const fonctionReadyStateLog = (evt) => {
     if (document.readyState === "complete") {
         console.log("Tout est chargé !");
     }
+<<<<<<< HEAD
 };
 
 // document.addEventListener("readystatechange", fonctionReadyStateLog);
+=======
+});
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
 
 
 // Fonctions externes à rattacher aux eventListeners
 const augmenterCompteur = (evt) => {
     // Lorsqu'on lie une fonction à un événement, le param est l'événement
+<<<<<<< HEAD
     //console.log(evt);
     // on peut récupérer l'élément ciblé par l'événement avec evt.target
     //console.log(evt.target);
@@ -52,6 +61,16 @@ const augmenterCompteur = (evt) => {
     evt.target.dataset.nbClics = clics;
     clickCounterBtn.textContent = `Cliqué ${clics} fois`;
     //clickCounterBtn.removeEventListener('click', augmenterCompteur);
+=======
+    console.log(evt);
+    // on peut récupérer l'élément ciblé par l'événement avec evt.target
+    console.log(evt.target);
+    // Ainsi, on peut récupérer des infos de son dataset! 
+    let clics = parseInt(evt.target.dataset.nbClics);
+    clics++;
+    clickCounterBtn.dataset.nbClics = clics;
+    clickCounterBtn.textContent = `Cliqué ${clics} fois`;
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
 };
 
 
@@ -70,12 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
         card.dataset.titre = newTitle;
         card.dataset.contenu = newContent;
         
+<<<<<<< HEAD
         card.querySelector("h5").innerText = newTitle;
+=======
+        card.querySelector(".card-title").innerText = newTitle;
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
         card.querySelector(".card-text").innerText = newContent;
     });
     
     clickCounterBtn.addEventListener("click", augmenterCompteur);
+<<<<<<< HEAD
     // Retirer un événement
     //clickCounterBtn.removeEventListener('click', augmenterCompteur);
+=======
+
+>>>>>>> 768cbe8b269ef29b1792bdc4a0b5df7a79a243fa
 
 });
